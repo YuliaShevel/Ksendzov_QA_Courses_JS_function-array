@@ -102,8 +102,8 @@ let function_2 = (user) => {
     console.log("Not found")
 }
 }
-users.forEach(f_2)
-f_2('07.10.2021')
+users.forEach(function_2)
+function_2('07.10.2021')
 
 
 
@@ -497,19 +497,19 @@ const fs = require('fs');
 const file = fs.readFileSync('../task2.json',{
     encoding: 'utf-8'
 });
-const array = JSON.parse(file);
+const array_new = JSON.parse(file);
 
-const unique_massive = [];
+const unique_massive_2 = [];
 
 array.forEach((user) => {
   
-    if(!(unique_massive.findIndex((uniqUsers) => user.name === uniqUsers.name) > -1)) {
+    if(!(unique_massive_2.findIndex((uniqUsers) => user.name === uniqUsers.name) > -1)) {
         unique_massive.push(user);
     }
 
 });
 
- console.log()
+ console.log(unique_massive_2)
 
 
 
